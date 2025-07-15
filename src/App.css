@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+  .transition_all {
+    @apply transition ease-in-out duration-400;
+  }
+}
