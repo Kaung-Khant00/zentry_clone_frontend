@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import "tailwindcss";
 
 @layer components {
   .transition_all {
-    @apply transition ease-in-out duration-400;
+    @apply transition ease-in-out duration-600;
   }
+}
+@theme {
+  --font-anton: "Anton", cursive;
 }

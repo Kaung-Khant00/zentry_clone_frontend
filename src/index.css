@@ -49,8 +49,9 @@ body {
 
   --color-violet-300: #5724ff;
 
-  --color-yellow-100: #8e983f;
-  --color-yellow-300: #edff66;
+  /*   --color-yellow-100: #8e983f;
+  --color-yellow-300: #edff66; */
+  --color-yellow: #f1ff7e;
 }
 
 @layer utilities {
@@ -84,11 +85,15 @@ body {
 
   .special-font b {
     font-family: "Zentry";
+    margin-right: 3px;
     font-feature-settings: "ss01" on;
   }
 
   .hero-heading {
-    @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
+    @apply uppercase text-5xl sm:right-10 sm:text-[63px] md:text-[113px] lg:text-[140px] font-semibold;
+  }
+  .hero-heading b {
+    @apply sm:text-7xl md:text-9xl lg:text-[10rem];
   }
 
   .about-subtext {
@@ -104,12 +109,11 @@ body {
   }
 
   .animated-word {
-    @apply font-zentry font-black opacity-0;
-    transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
-    transform-origin: 50% 50% -150px !important;
-    will-change: opacity, transform;
+    @apply font-zentry font-black opacity-100 leading-[.95] py-9;
   }
-
+  .animated-word b {
+    @apply font-zentry text-[91px];
+  }
   .bento-tilt_1 {
     @apply relative border border-white/20 col-span-2 overflow-hidden rounded-md transition-transform duration-300 ease-out;
   }
